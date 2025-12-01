@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SpeakUp – Traducción Instantánea</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    body { margin:0; font-family: 'Roboto', sans-serif; background:#f0f4f8; color:#333; scroll-behavior: smooth;}
+    a {text-decoration:none;}
+    header {background: linear-gradient(135deg, #1e90ff, #00c6ff); color:white; text-align:center; padding:80px 20px; position:relative;}
+    header h1 {font-size:3rem; margin-bottom:10px; animation:fadeInDown 1s;}
+    header p {font-size:1.3rem; animation:fadeInUp 1s;}
+    @keyframes fadeInDown {from {opacity:0; transform:translateY(-30px);} to {opacity:1; transform:translateY(0);}}
+    @keyframes fadeInUp {from {opacity:0; transform:translateY(30px);} to {opacity:1; transform:translateY(0);}}
+    nav {background:#1565c0; text-align:center; padding:15px 0; position:sticky; top:0; z-index:10;}
+    nav a {color:white; font-weight:bold; margin:0 20px; font-size:1rem; transition:0.3s;}
+    nav a:hover {color:#ffeb3b;}
+
+    section {max-width:1100px; margin:40px auto; background:white; padding:40px; border-radius:15px; box-shadow:0 8px 20px rgba(0,0,0,0.1);}
+    section h2 {text-align:center; color:#1e90ff; margin-bottom:30px;}
+    .features {display:flex; flex-wrap:wrap; justify-content:space-around;}
+    .feature-box {background:#e3f2fd; padding:25px; margin:15px; border-radius:15px; width:260px; text-align:center; transition:transform 0.3s, background 0.3s;}
+    .feature-box:hover {transform:translateY(-10px); background:#b3e5fc;}
+    .feature-box img {width:60px; margin-bottom:15px;}
+    .feature-box h3 {margin-bottom:10px;}
+
+    /* ===== Precios ===== */
+    .pricing-container {display:flex; flex-wrap:wrap; justify-content:center; gap:25px; margin-top:30px;}
+    .plan-box {background:linear-gradient(145deg, #ffeb3b, #ff9800); padding:30px; width:260px; border-radius:15px; color:white; text-align:center; box-shadow:0 8px 15px rgba(0,0,0,0.2); transition:transform 0.3s;}
+    .plan-box:hover {transform:scale(1.05);}
+    .plan-box h3 {font-size:1.8rem; margin-bottom:10px;}
+    .plan-box .price {font-size:2rem; margin:15px 0;}
+    .plan-box ul {text-align:left; margin-bottom:20px; padding-left:20px;}
+    .plan-box li {margin:8px 0;}
+    .plan-box .btn {background:white; color:#ff9800; padding:12px 25px; font-weight:bold; border-radius:8px; transition:0.3s;}
+    .plan-box .btn:hover {background:#ffb74d; color:white;}
+
+    /* ===== Botones generales ===== */
+    .btn {display:inline-block; background:#1e90ff; color:white; padding:12px 25px; border-radius:8px; font-weight:bold; margin-top:15px; transition:0.3s;}
+    .btn:hover {background:#1565c0;}
+
+    /* ===== Download ===== */
+    .download img {width:120px; margin:15px; transition:0.3s;}
+    .download img:hover {transform:scale(1.2);}
+
+    /* ===== Footer ===== */
+    footer {background:#222; color:white; text-align:center; padding:25px; margin-top:50px;}
+
+    /* ===== Responsivo ===== */
+    @media(max-width:768px){.features, .pricing-container{flex-direction:column; align-items:center;}}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>SpeakUp</h1>
+    <p>Traducción instantánea y precisa en más de 100 idiomas 🌎</p>
+    <a href="#download" class="btn">Descargar Ahora</a>
+</header>
+
+<nav>
+    <a href="#features">Funciones</a>
+    <a href="#about">Sobre la App</a>
+    <a href="#pricing">Planes</a>
+    <a href="#download">Descargar</a>
+</nav>
+
+<section id="features">
+<h2>Funciones Destacadas</h2>
+<div class="features">
+    <div class="feature-box">
+        <img src="https://img.icons8.com/ios-filled/100/000000/globe.png"/>
+        <h3>🌎 100+ Idiomas</h3>
+        <p>Traduce textos instantáneamente a cualquier idioma que necesites.</p>
+    </div>
+    <div class="feature-box">
+        <img src="https://img.icons8.com/ios-filled/100/000000/microphone.png"/>
+        <h3>🎤 Voz a voz</h3>
+        <p>Habla y la app traduce en tiempo real para conversaciones fluidas.</p>
+    </div>
+    <div class="feature-box">
+        <img src="https://img.icons8.com/ios-filled/100/000000/camera.png"/>
+        <h3>📷 Traducción con cámara</h3>
+        <p>Apunta tu cámara y traduce carteles, menús o documentos al instante.</p>
+    </div>
+    <div class="feature-box">
+        <img src="https://img.icons8.com/ios-filled/100/000000/chat.png"/>
+        <h3>💬 Chat multilingüe</h3>
+        <p>Conversa sin barreras con personas de todo el mundo.</p>
+    </div>
+</div>
+</section>
+
+<section id="about">
+<h2>Sobre SpeakUp</h2>
+<p>
+SpeakUp es la app de traducción ideal para viajeros, estudiantes y profesionales.
+Su tecnología avanzada permite traducciones rápidas y precisas, reconocimiento de voz 
+y traducción visual con cámara. Comunicarte en cualquier idioma nunca fue tan fácil.
+</p>
+</section>
+
+<section id="pricing">
+<h2>Planes y Precios</h2>
+<div class="pricing-container">
+    <div class="plan-box">
+        <h3>Gratis</h3>
+        <div class="price">S/ 0 / mes</div>
+        <ul>
+            <li>Traducción de texto ilimitada</li>
+            <li>50+ idiomas</li>
+            <li>Funciones básicas</li>
+        </ul>
+        <a class="btn" href="#">Comenzar Gratis</a>
+    </div>
+    <div class="plan-box">
+        <h3>Pro</h3>
+        <div class="price">S/ 19.99 / mes</div>
+        <ul>
+            <li>Todo del plan Gratis</li>
+            <li>Traducción por voz</li>
+            <li>Traducción con cámara</li>
+            <li>Sin anuncios</li>
+        </ul>
+        <a class="btn" href="#">Obtener Pro</a>
+    </div>
+    <div class="plan-box">
+        <h3>Premium</h3>
+        <div class="price">S/ 49.99 / mes</div>
+        <ul>
+            <li>Todo del plan Pro</li>
+            <li>Chat multilingüe ilimitado</li>
+            <li>Soporte prioritario</li>
+            <li>Funciones exclusivas</li>
+        </ul>
+        <a class="btn" href="#">Obtener Premium</a>
+    </div>
+</div>
+</section>
+
+<section id="download">
+<h2>Descarga la App</h2>
+<div class="download" style="text-align:center;">
+    <a href="#"><img src="https://img.icons8.com/color/96/000000/google-play.png"/></a>
+    <a href="#"><img src="https://img.icons8.com/ios-filled/96/000000/apple-app-store.png"/></a>
+</div>
+</section>
+
+<footer>
+© 2025 SpeakUp – App de Traducción Instantánea
+</footer>
+
+</body>
+</html>
